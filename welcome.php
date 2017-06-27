@@ -52,6 +52,7 @@ $id=uniqid();
 if($okay==1){
 mysqli_stmt_bind_param($stmt,"sss",$id,$user,$textvalue);
 mysqli_stmt_execute($stmt);
+echo "Your id:".$id;
 }
 ?>
     <div id="d1">
