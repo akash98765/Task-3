@@ -1,5 +1,12 @@
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="dev.css">
+</head>
 <body>
+ <ul>
+<li><a href="signup.php">Sign Up</a></li>
+<li><a href="signin.php">Sign In</a></li>
+</ul>
 <?php
  $id=$_GET["id"];
  $textvalue="";
