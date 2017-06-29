@@ -1,7 +1,7 @@
 <?php
- session_start();
- $uname=$pass=$cap="";
- $username="root";
+session_start();
+$uname=$pass=$cap="";
+$username="root";
 $servername="localhost";
 $password="Weiss-2sfj";
 $dbname="users";
@@ -22,9 +22,9 @@ $_SESSION['error1']=1;
 while($row=mysqli_fetch_assoc($result)){
 if($uname==$row['username'] && $pass==$row['password'])
 {$_SESSION['uname']=$uname;
- $_SESSION['pass']=$pass;
- $_SESSION['error']=1;
- break;
+$_SESSION['pass']=$pass;
+$_SESSION['error']=1;
+break;
 }
 }
 if($_SESSION['error']==1 && $_SESSION['error1']==1)
